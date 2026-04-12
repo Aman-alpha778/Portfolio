@@ -24,6 +24,16 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
+import photoshop from "./tech/photoshop.png";
+import illustrator from "./tech/illustrator.png";
+import corel from "./tech/corel.png";
+import indesign from "./tech/indesign.png";
+import after from "./tech/after.png";
+import blender from "./tech/pngegg.png";
+
+
+
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -38,6 +48,7 @@ import project5 from "./projects/project5.png";
 import project6 from "./projects/project6.png";
 import Home from "./projects/Home.png";
 import landing from "./projects/landing (1).png"
+import back from"./projects/back.png"
 
 import user1 from "./testimonials/user1.jpg";
 import user2 from "./testimonials/user2.jpg";
@@ -89,5 +100,12 @@ export {
   linkedin,
   twitter,
   Home,
-  landing
+  landing,
+    after,
+    photoshop,
+    illustrator,
+    indesign,
+    blender,
+    corel,
+    back
 };

@@ -15,7 +15,7 @@ const Footer = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <p className="text-white text-md font-bold flex">
-          &copy; Shivam {new Date().getFullYear()}. All rights reserved.
+          &copy; Aman Sharma {new Date().getFullYear()}. All rights reserved.
         </p>
 
         {/* Nav Links (Desktop) */}
@@ -25,9 +25,9 @@ const Footer = () => {
               key={social.name}
               className="text-secondary font-poppins font-medium cursor-pointer text-[16px] opacity-80 hover:opacity-100 transition"
             >
-              <Link to={social.link} target="_blank" rel="noreferrer noopener">
-                <img src={social.icon} alt={social.name} className="h-6 w-6" />
-              </Link>
+              {/*<Link to={social.link} target="_blank" rel="noreferrer noopener">*/}
+              {/*  <img src={social.icon} alt={social.name} className="h-6 w-6" />*/}
+              {/*</Link>*/}
             </li>
           ))}
         </ul>

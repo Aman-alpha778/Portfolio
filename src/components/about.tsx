@@ -54,7 +54,9 @@ export const About = () => {
           variants={fadeIn(undefined, undefined, 0.1, 1)}
           className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I’m a skilled web developer with strong expertise in JavaScript and modern frameworks like React and Node.js. I’m a quick learner who enjoys collaborating closely with clients to build efficient, scalable, and user-friendly web solutions that solve real-world problems. Let’s work together to bring your ideas to life!
+          A creative graphic designer is a visual storyteller who transforms ideas into eye-catching designs that
+          communicate messages effectively. They combine creativity, typography, color, and layout to create engaging visuals for brands, media,
+          and digital platforms. Their work not only attracts attention but also leaves a lasting impression.
         </motion.p>
 
         {/* Service Card */}

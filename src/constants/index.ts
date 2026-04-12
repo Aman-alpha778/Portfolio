@@ -35,7 +35,14 @@ import {
   twitter,
   github,
   Home,
-  landing
+  landing,
+    after,
+    photoshop,
+    illustrator,
+    indesign,
+    blender,
+    corel,
+    back
 } from "../assets";
 
 // Navbar Links
@@ -69,15 +76,15 @@ export const SERVICES = [
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "Graphic Designer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "3D animator",
     icon: backend,
   },
   {
-    title: "Web Designer",
+    title: "Video Editor",
     icon: creator,
   },
 ] as const;
@@ -97,28 +104,28 @@ export const TECHNOLOGIES = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Photoshop",
+    icon: photoshop,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Illustrator",
+    icon: illustrator,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Indesign",
+    icon: indesign,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "CorelDraw",
+    icon: corel,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Blender",
+    icon: blender,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "After Effects",
+    icon: after,
   },
   {
     name: "Three JS",
@@ -132,51 +139,51 @@ export const TECHNOLOGIES = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ] as const;
 
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "Java Developer",
-    company_name: "Excellence Technology,Hamirpur",
+    title: "Graphic Designer",
+    company_name: "Sortiqsolutions pvt. ltd.",
     icon: backend,
     iconBg: "#383E56",
-    date: "June 2024 - August 2024",
+    date: "5 January 2024 - Present",
     points: [
-      "Learned Core Java concepts including OOP principles, collections framework, exception handling, and file handling.",
-      "Developed Java applications and mini projects to strengthen practical programming skills.",
-      "Practiced problem-solving and logical programming using Java.",
-      "Gained understanding of database connectivity (JDBC) and basic application development",
+      "Designed creative visuals for branding, social media, and marketing campaigns, ensuring consistency with the company’s identity.",
+      "Collaborated with team members and clients to understand requirements and deliver high-quality design solutions.",
+      "Managed multiple projects efficiently, meeting deadlines while maintaining attention to detail and creativity.",
+
     ],
   },
   {
-    title: "React.js Developer",
-    company_name: "Excellence Technology,Hamirpur",
+    title: "UI/UX Designer",
+    company_name: "Sortiqsolutions pvt. ltd.",
     icon: reactjs,
     iconBg: "#E6DEDD",
-    date: "June 2025 - August 2025",
+    date: "5 January 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed intuitive and user-friendly interfaces with a focus on usability and clean layouts.",
+      "Created wireframes, prototypes, and improved user experience through research and feedback.",
+
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Udemy",
+    title: "Video Editor/3D Animator",
+    company_name: "Sortiqsolutions pvt. ltd.",
     icon: nodejs,
     iconBg: "#383E56",
-    date: "Jan 2025 - November 2025",
+    date: "5 January 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Edited and produced high-quality videos using creative transitions, effects, and storytelling techniques.\n" +
+      "Managed projects from raw footage to final output, ensuring engaging and polished content",
+      "Created realistic and engaging 3D animations, models, and visual scenes.\n" +
+      "Worked with tools like Blender and Spline to bring concepts to life through motion and design.",
+
     ],
   },
 ] as const;
@@ -212,7 +219,7 @@ export const TESTIMONIALS = [
 // Projects
 export const PROJECTS = [
   {
-    name: "Sentrachat",
+    name: "Hero Banner",
     description:
       "A real-time chat application with AI-powered emotion tracking (Positive/Neutral/Negative), secure authentication, and scalable cloud deployment.",
     tags: [
@@ -229,8 +236,8 @@ export const PROJECTS = [
         color: "pink-text-gradient",
       },
     ],
-    image: Home,
-    source_code_link: "https://github.com/Shivamch0/SentraChat",
+    image:back,
+    source_code_link: "",
     live_site_link: "https://sentrachat.netlify.app",
   },
   {

@@ -7,7 +7,7 @@ import { cn } from "../utils/lib";
 // Hero
 export const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mt-7 mx-auto">
       <div
         className={cn(
           styles.paddingX,
@@ -23,11 +23,11 @@ export const Hero = () => {
         {/* About Me */}
         <div>
           <h1 className={cn(styles.heroHeadText, "text-white")}>
-            Hi, I'm <span className="text-[#915eff]">Shivam</span>
+            Hi, I'm <span className="text-[#915eff]">Aman Sharma</span>
           </h1>
           <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
-            I develop E-commerce, user <br className="sm:block hidden" />
-            interfaces and web applications
+              A creative graphic designer <br className="sm:block hidden" />
+            {/*interfaces and web applications*/}
           </p>
         </div>
       </div>
