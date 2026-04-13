@@ -163,7 +163,7 @@ export const EXPERIENCES = [
   {
     title: "UI/UX Designer",
     company_name: "Sortiqsolutions pvt. ltd.",
-    icon: reactjs,
+    icon: figma,
     iconBg: "#E6DEDD",
     date: "5 January 2024 - Present",
     points: [
@@ -175,7 +175,7 @@ export const EXPERIENCES = [
   {
     title: "Video Editor/3D Animator",
     company_name: "Sortiqsolutions pvt. ltd.",
-    icon: nodejs,
+    icon:aftergi,
     iconBg: "#383E56",
     date: "5 January 2024 - Present",
     points: [
