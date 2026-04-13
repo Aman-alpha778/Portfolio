@@ -175,7 +175,7 @@ export const EXPERIENCES = [
   {
     title: "Video Editor/3D Animator",
     company_name: "Sortiqsolutions pvt. ltd.",
-    icon:aftergi,
+    icon:after,
     iconBg: "#383E56",
     date: "5 January 2024 - Present",
     points: [
