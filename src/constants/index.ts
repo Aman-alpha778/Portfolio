@@ -219,114 +219,84 @@ export const TESTIMONIALS = [
 // Projects
 export const PROJECTS = [
   {
-    name: "Hero Banner",
+    name: "Photoshop",
     description:
       "A real-time chat application with AI-powered emotion tracking (Positive/Neutral/Negative), secure authentication, and scalable cloud deployment.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+
+
     ],
-    image:back,
-    source_code_link: "",
-    live_site_link: "https://sentrachat.netlify.app",
+    image:photoshop,
+    // source_code_link: "",
+    // live_site_link: "https://sentrachat.netlify.app",
   },
+
   {
-    name: "Golds Gym",
+    name: "Illustrator",
     description:
       "Web application that enables users to search for fitness exercises, effective personalized positions, and recommends new exercises based on their personal preferences.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rapidapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
+
     ],
-    image: project2,
-    source_code_link: "https://github.com/sanidhyy/fitness-app",
-    live_site_link: "https://fitness-gym-react.netlify.app",
+    image: illustrator,
+    // source_code_link: "https://github.com/sanidhyy/fitness-app",
+    // live_site_link: "https://fitness-gym-react.netlify.app",
   },
-  // {
-  //   name: "Shoppy",
-  //   description:
-  //     "The most personalised admin dashboard web application that allows enables users to choose customized themes and dark mode with different pages and variety of charts.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "syncfusion",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "scss",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: project3,
-  //   source_code_link: "https://github.com/sanidhyy/admin-dashboard",
-  //   live_site_link: "https://shoppy-dashboard-react.netlify.app",
-  // },
-  // {
-  //   name: "TikTok Clone",
-  //   description:
-  //     "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "nodejs",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwindcss",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: project4,
-  //   source_code_link: "https://github.com/sanidhyy/tiktok-clone",
-  //   live_site_link: "https://tiktok-clone-react.vercel.app",
-  // },
   {
-    name: "CEMS",
+
+    name: "Coreldraw",
+    description:
+      "The most personalised admin dashboard web application that allows enables users to choose customized themes and dark mode with different pages and variety of charts.",
+    tags: [
+
+    ],
+    image: corel,
+    // source_code_link: "https://github.com/sanidhyy/admin-dashboard",
+    // live_site_link: "https://shoppy-dashboard-react.netlify.app",
+  },
+  {
+    name: "InDesign",
+    description:
+      "A Next JS Web Application that enables users to upload videos of any length and size, create accounts and connect with other people just like any other social media.",
+    tags: [
+      // {
+      //   name: "nextjs",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "nodejs",
+      //   color: "green-text-gradient",
+      // },
+      // {
+      //   name: "tailwindcss",
+      //   color: "pink-text-gradient",
+      // },
+    ],
+    image: indesign,
+    // source_code_link: "https://github.com/sanidhyy/tiktok-clone",
+    // live_site_link: "https://tiktok-clone-react.vercel.app",
+  },
+  {
+    name: "After Effects",
     description:
       "A full-stack web application designed to manage campus events efficiently with role-based access, real-time updates, and data analytics.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "NodeMailer",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      // {
+      //   name: "react",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "NodeMailer",
+      //   color: "green-text-gradient",
+      // },
+      // {
+      //   name: "css",
+      //   color: "pink-text-gradient",
+      // },
     ],
-    image: landing,
-    source_code_link: "https://github.com/sanidhyy/crypto-app",
-    live_site_link: "https://react-cems.netlify.app",
+    image: after,
+    // source_code_link: "https://github.com/sanidhyy/crypto-app",
+    // live_site_link: "https://react-cems.netlify.app",
   },
   // {
   //   name: "Travel Advisor",
