@@ -14,7 +14,7 @@ const Footer = () => {
       )}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <p className="text-slate-900 text-md font-bold flex">
+        <p className="text-white text-md font-bold flex">
           &copy; Aman Sharma {new Date().getFullYear()}. All rights reserved.
         </p>
 

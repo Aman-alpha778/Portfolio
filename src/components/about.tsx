@@ -52,7 +52,7 @@ export const About = () => {
         {/* Body */}
         <motion.p
           variants={fadeIn(undefined, undefined, 0.1, 1)}
-          className="empty-4 text-slate-600 text-[17px] max-w-3xl leading-[30px]"
+          className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           A creative graphic designer is a visual storyteller who transforms ideas into eye-catching designs that
           communicate messages effectively. They combine creativity, typography, color, and layout to create engaging visuals for brands, media,

@@ -50,7 +50,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
           }}
         >
           <img src={logo} alt="Logo" className="w-9 h-9 object-contain" />
-          <p className="text-slate-900 text-[18px] font-bold cursor-pointer flex">
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Aman Sharma&nbsp;<span className="sm:block hidden">| Senior Graphic Designer</span>
           </p>
         </Link>
@@ -61,8 +61,8 @@ export const Navbar = ({ hide }: NavbarProps) => {
             <li
               key={link.id}
               className={cn(
-                active === link.title ? "text-slate-900" : "text-slate-500",
-                "hover:text-slate-900 text-[18px] font-medium cursor-pointer"
+                active === link.title ? "text-white" : "text-secondary",
+                "hover:text-white text-[18px] font-medium cursor-pointer"
               )}
               onClick={() => !link.link && setActive(link.title)}
             >
@@ -98,7 +98,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
                 <li
                   key={link.id}
                   className={cn(
-                    active === link.title ? "text-slate-900" : "text-slate-500",
+                    active === link.title ? "text-white" : "text-secondary",
                     "font-poppins font-medium cursor-pointer text-[16px]"
                   )}
                   onClick={() => {
