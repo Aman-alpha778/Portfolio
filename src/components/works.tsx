@@ -29,7 +29,7 @@ const ProjectCard = ({
         scale: 1,
         speed: 450,
       }}
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border border-[#eee3d6] shadow-card"
     >
       <div className="relative w-full h-[230px]">
         {/* Work image */}
@@ -72,7 +72,7 @@ const ProjectCard = ({
 
       {/* Work Info */}
       <div className="mt-5">
-        <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        <h3 className="text-slate-900 font-bold text-[24px]">{name}</h3>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
       </div>
 
