@@ -35,7 +35,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
     <nav
       className={cn(
         styles.paddingX,
-        "w-full flex items-center py-5 fixed top-0 z-20 bg-primary/90 backdrop-blur-md border-b border-[#e6dccf]",
+        "w-full flex items-center py-5 fixed top-0 z-20 bg-primary",
         isAtBottom || hide ? "mt-0" : "mt-20"
       )}
     >
@@ -61,7 +61,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
             <li
               key={link.id}
               className={cn(
-                active === link.title ? "text-slate-900" : "text-secondary",
+                active === link.title ? "text-slate-900" : "text-slate-500",
                 "hover:text-slate-900 text-[18px] font-medium cursor-pointer"
               )}
               onClick={() => !link.link && setActive(link.title)}
@@ -89,7 +89,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
           <div
             className={cn(
               !toggle ? "hidden" : "flex",
-              "p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl border border-[#eadfce] shadow-xl"
+              "p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl"
             )}
           >
             {/* Nav Links (Mobile) */}
@@ -98,7 +98,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
                 <li
                   key={link.id}
                   className={cn(
-                    active === link.title ? "text-slate-900" : "text-secondary",
+                    active === link.title ? "text-slate-900" : "text-slate-500",
                     "font-poppins font-medium cursor-pointer text-[16px]"
                   )}
                   onClick={() => {

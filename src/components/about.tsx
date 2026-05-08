@@ -27,9 +27,9 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
-        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col border border-[#efe5d8]">
+        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-slate-900 text-[20px] font-bold text-center">
+          <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
         </div>
@@ -52,7 +52,7 @@ export const About = () => {
         {/* Body */}
         <motion.p
           variants={fadeIn(undefined, undefined, 0.1, 1)}
-          className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="empty-4 text-slate-600 text-[17px] max-w-3xl leading-[30px]"
         >
           A creative graphic designer is a visual storyteller who transforms ideas into eye-catching designs that
           communicate messages effectively. They combine creativity, typography, color, and layout to create engaging visuals for brands, media,

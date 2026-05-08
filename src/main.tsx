@@ -12,16 +12,11 @@ const rootEl = document.getElementById("root");
 ReactDOM.createRoot(rootEl!).render(
   <React.StrictMode>
     <Toaster
-      theme="light"
+      theme="dark"
       richColors
       closeButton
       toastOptions={{
-        style: {
-          background: "#ffffff",
-          color: "#1f2937",
-          border: "1px solid #e7dece",
-          opacity: 0.98,
-        },
+        style: { background: "#050816", opacity: 0.95 },
       }}
     />
     <App />

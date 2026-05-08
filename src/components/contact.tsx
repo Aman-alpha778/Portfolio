@@ -126,7 +126,7 @@ export const Contact = () => {
       <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] bg-black-100 p-8 rounded-2xl border border-[#eadfce] shadow-card"
+          className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
           {/* Title */}
           <p className={styles.sectionSubText}>Get in touch</p>
@@ -140,7 +140,7 @@ export const Contact = () => {
           >
             {/* Name */}
             <label htmlFor="name" className="flex flex-col">
-              <span className="text-slate-900 font-medium mb-4">Your Name*</span>
+              <span className="text-white font-medium mb-4">Your Name*</span>
               <input
                 type="text"
                 name="name"
@@ -151,7 +151,7 @@ export const Contact = () => {
                 title="What's your name?"
                 disabled={loading}
                 aria-disabled={loading}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-slate-900 rounded-lg outline-none border border-[#ddd1c2] font-medium disabled:bg-tertiary/60 disabled:text-slate-500"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60"
               />
 
               {/* Invalid Name */}
@@ -162,7 +162,7 @@ export const Contact = () => {
 
             {/* Email */}
             <label htmlFor="email" className="flex flex-col">
-              <span className="text-slate-900 font-medium mb-4">Your Email*</span>
+              <span className="text-white font-medium mb-4">Your Email*</span>
               <input
                 type="email"
                 name="email"
@@ -173,7 +173,7 @@ export const Contact = () => {
                 title="What's your email?"
                 disabled={loading}
                 aria-disabled={loading}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-slate-900 rounded-lg outline-none border border-[#ddd1c2] font-medium disabled:bg-tertiary/60 disabled:text-slate-500"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60"
               />
 
               {/* Invalid Email */}
@@ -184,7 +184,7 @@ export const Contact = () => {
 
             {/* Message */}
             <label htmlFor="message" className="flex flex-col">
-              <span className="text-slate-900 font-medium mb-4">Your Message*</span>
+              <span className="text-white font-medium mb-4">Your Message*</span>
               <textarea
                 rows={7}
                 name="message"
@@ -195,7 +195,7 @@ export const Contact = () => {
                 title="What do you want to say?"
                 disabled={loading}
                 aria-disabled={loading}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-slate-900 rounded-lg outline-none border border-[#ddd1c2] font-medium disabled:bg-tertiary/60 disabled:text-slate-500 disabled:resize-none"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60 disabled:resize-none"
               />
 
               {/* Invalid Message */}
@@ -208,7 +208,7 @@ export const Contact = () => {
             <button
               type="submit"
               title={loading ? "Sending..." : "Send"}
-              className="bg-slate-900 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl disabled:bg-slate-400 disabled:text-slate-100"
+              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl disabled:bg-tertiary/20 disabled:text-white/60"
               disabled={loading}
               aria-disabled={loading}
             >
