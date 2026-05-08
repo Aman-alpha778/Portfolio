@@ -13,6 +13,7 @@ import { Experience } from "./experience";
 import { Feedbacks } from "./feedbacks";
 import { Hero } from "./hero";
 import { Navbar } from "./navbar";
+import { ProjectsPage } from "./projects-page";
 import { Tech } from "./tech";
 import { Works } from "./works";
 
@@ -26,6 +27,7 @@ export {
   Feedbacks,
   Hero,
   Navbar,
+  ProjectsPage,
   StarsCanvas,
   Tech,
   Works,

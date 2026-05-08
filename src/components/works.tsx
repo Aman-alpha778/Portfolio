@@ -1,90 +1,55 @@
+import { Link } from "react-router-dom";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
-import { github, preview } from "../assets";
-import { PROJECTS } from "../constants";
+import { PROJECT_CATEGORIES } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { cn } from "../utils/lib";
 import { fadeIn, textVariant } from "../utils/motion";
 
-type ProjectCardProps = (typeof PROJECTS)[number] & {
+type CategoryCardProps = (typeof PROJECT_CATEGORIES)[number] & {
   index: number;
 };
 
-// Project Card
-const ProjectCard = ({
+const CategoryCard = ({
   index,
-  name,
+  slug,
+  shortTitle,
   description,
-  tags,
   image,
-  source_code_link,
-  live_site_link,
-}: ProjectCardProps) => (
+}: CategoryCardProps) => (
   <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-    <Tilt
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450,
-      }}
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-    >
-      <div className="relative w-full h-[230px]">
-        {/* Work image */}
-        <img
-          src={image}
-          alt={name}
-          className="w-fit h-full object-cover rounded-2xl"
-        />
-
-        {/* Live Site */}
-        <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-          {/*<div*/}
-          {/*  onClick={() => window.open(live_site_link, "_blank", "noreferrer")}*/}
-          {/*  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"*/}
-          {/*>*/}
-          {/*  <img*/}
-          {/*    src={preview}*/}
-          {/*    alt="Live Site"*/}
-          {/*    title="Live Site"*/}
-          {/*    className="w-2/3 h-2/3 object-contain"*/}
-          {/*  />*/}
-          {/*</div>*/}
-
-          {/* Github */}
-          {/* <div
-            onClick={() =>
-              window.open(source_code_link, "_blank", "noreferrer")
-            }
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-2"
-          >
-            <img
-              src={github}
-              alt="Github"
-              title="Github"
-              className="w-1/2 h-1/2 object-contain"
-            />
-          </div> */}
+    <Link to={`/projects/${slug}`} className="block sm:w-[360px] w-full">
+      <Tilt
+        options={{
+          max: 20,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-5 rounded-2xl w-full cursor-pointer"
+      >
+        <div className="relative w-full h-[230px] overflow-hidden rounded-2xl">
+          <img
+            src={image}
+            alt={shortTitle}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black-200 via-black-200/50 to-transparent" />
+          <div className="absolute left-4 right-4 bottom-4">
+            <span className="inline-flex rounded-full bg-black/40 px-3 py-1 text-xs uppercase tracking-[0.2em] text-white">
+              View Category
+            </span>
+          </div>
         </div>
-      </div>
 
-      {/* Work Info */}
-      <div className="mt-5">
-        <h3 className="text-white font-bold text-[24px]">{name}</h3>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
-      </div>
-
-      {/* Work Tag */}
-      <div className="mt-4 flex flex-wrap gap-2">
-        {tags.map((tag, tagIdx) => (
-          <p key={`Tag-${tagIdx}`} className={cn(tag.color, "text-[14px]")}>
-            #{tag.name}
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{shortTitle}</h3>
+          <p className="mt-2 text-secondary text-[14px] leading-6">
+            {description}
           </p>
-        ))}
-      </div>
-    </Tilt>
+        </div>
+      </Tilt>
+    </Link>
   </motion.div>
 );
 
@@ -102,18 +67,23 @@ export const Works = () => {
         {/* About */}
         <div className="w-full flex">
           <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
+            variants={fadeIn(undefined, undefined, 0.1, 1)}
             className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
-            Following projects showcases my skills and experience through
-            real-world examples of my work.
+            Choose a domain to explore focused project samples. Each card opens
+            a dedicated gallery where you can later replace the dummy work with
+            your real projects.
           </motion.p>
         </div>
 
-        {/* Project Card */}
+        {/* Category Cards */}
         <div className="mt-20 flex flex-wrap gap-7">
-          {PROJECTS.map((project, i) => (
-            <ProjectCard key={`project-${i}`} index={i} {...project} />
+          {PROJECT_CATEGORIES.map((category, i) => (
+            <CategoryCard
+              key={category.slug}
+              index={i}
+              {...category}
+            />
           ))}
         </div>
       </>
