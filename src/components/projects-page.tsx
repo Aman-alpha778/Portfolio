@@ -25,9 +25,9 @@ const ProjectPreviewCard = ({
 }) => (
   <motion.article
     variants={fadeIn("up", "spring", index * 0.15, 0.75)}
-    className="group"
+    className="group h-full"
   >
-    <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-tertiary p-5 shadow-card">
+    <div className="relative flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-tertiary p-5 shadow-card">
       <div className="relative h-[260px] overflow-hidden rounded-[22px]">
         <img
           src={project.image}
@@ -42,8 +42,8 @@ const ProjectPreviewCard = ({
         </div>
       </div>
 
-      <div className="mt-6 flex items-start justify-between gap-4">
-        <div>
+      <div className="mt-6 flex flex-1 items-start justify-between gap-4">
+        <div className="flex-1">
           <h3 className="text-[24px] font-bold text-white">{project.name}</h3>
           <p className="mt-3 text-[14px] leading-6 text-secondary">
             {project.description}

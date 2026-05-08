@@ -25,6 +25,10 @@ import {
   back,
   project1,
   project2,
+  project3,
+  project4,
+  project5,
+  project6,
 } from "../assets";
 
 export const NAV_LINKS = [
@@ -259,6 +263,36 @@ export const CATEGORY_PROJECTS: Record<ProjectCategory["slug"], ProjectItem[]> =
         { name: "conversion", color: "pink-text-gradient" },
       ],
     },
+    {
+      name: "Wellness Booking Flow",
+      description:
+        "A dummy appointment and booking journey focused on calming visuals, service selection, and checkout clarity.",
+      image: project3,
+      tags: [
+        { name: "app-flow", color: "blue-text-gradient" },
+        { name: "booking", color: "green-text-gradient" },
+      ],
+    },
+    {
+      name: "Creator Portfolio Wireframe",
+      description:
+        "A placeholder case study for a portfolio experience with modular sections, transitions, and lightweight navigation.",
+      image: project4,
+      tags: [
+        { name: "portfolio", color: "pink-text-gradient" },
+        { name: "ux", color: "blue-text-gradient" },
+      ],
+    },
+    {
+      name: "Analytics Workspace",
+      description:
+        "A sample workspace concept showing dense tables, charts, panel navigation, and a polished dark dashboard system.",
+      image: project5,
+      tags: [
+        { name: "analytics", color: "green-text-gradient" },
+        { name: "saas", color: "pink-text-gradient" },
+      ],
+    },
   ],
   "graphic-design": [
     {
@@ -291,6 +325,36 @@ export const CATEGORY_PROJECTS: Record<ProjectCategory["slug"], ProjectItem[]> =
         { name: "layout", color: "green-text-gradient" },
       ],
     },
+    {
+      name: "Social Media Launch Kit",
+      description:
+        "A dummy campaign pack with post templates, story frames, ad creatives, and launch-week visual consistency.",
+      image: project6,
+      tags: [
+        { name: "social", color: "blue-text-gradient" },
+        { name: "campaign-kit", color: "pink-text-gradient" },
+      ],
+    },
+    {
+      name: "Packaging Concept Sheet",
+      description:
+        "A placeholder packaging direction featuring label systems, product mockups, and shelf-ready presentation boards.",
+      image: corel,
+      tags: [
+        { name: "packaging", color: "green-text-gradient" },
+        { name: "mockup", color: "blue-text-gradient" },
+      ],
+    },
+    {
+      name: "Event Collateral System",
+      description:
+        "Sample ticket, standee, banner, and invite designs built as a cohesive event identity suite.",
+      image: photoshop,
+      tags: [
+        { name: "event", color: "pink-text-gradient" },
+        { name: "print-design", color: "green-text-gradient" },
+      ],
+    },
   ],
   "animation-motion": [
     {
@@ -321,6 +385,36 @@ export const CATEGORY_PROJECTS: Record<ProjectCategory["slug"], ProjectItem[]> =
       tags: [
         { name: "motion-graphics", color: "pink-text-gradient" },
         { name: "storyboard", color: "green-text-gradient" },
+      ],
+    },
+    {
+      name: "Title Sequence Concept",
+      description:
+        "A dummy title sequence with typographic timing, atmosphere frames, and cinematic pacing notes for an intro sting.",
+      image: project1,
+      tags: [
+        { name: "title-design", color: "blue-text-gradient" },
+        { name: "cinematic", color: "pink-text-gradient" },
+      ],
+    },
+    {
+      name: "Music Visualizer Frames",
+      description:
+        "A sample audio-reactive direction blending abstract motion, color pulses, and layered compositions.",
+      image: project2,
+      tags: [
+        { name: "visualizer", color: "green-text-gradient" },
+        { name: "loop", color: "blue-text-gradient" },
+      ],
+    },
+    {
+      name: "Exploded 3D Product Shot",
+      description:
+        "A placeholder animation showing a product breakdown with staged lighting, camera motion, and material emphasis.",
+      image: blender,
+      tags: [
+        { name: "product-shot", color: "pink-text-gradient" },
+        { name: "render", color: "green-text-gradient" },
       ],
     },
   ],
